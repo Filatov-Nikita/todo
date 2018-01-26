@@ -5,6 +5,19 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
     state: {
-        a:1
+        objectives: []
+    },
+    getters: {
+        objectives(state) {
+            return state.objectives;
+        }
+    },
+    mutations: {
+        setObjective(state, data) {
+            state.objectives.push({
+                value: data.value
+            })
+        }
     }
-}); 
+
+});
