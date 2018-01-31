@@ -10,12 +10,17 @@
                 leave-active-class="scale-transition scale-out"
                 mode="out-in"
                 >
-    
+
     </transition>
+
+    <div class="modal">
+        <div class="content">
+            <h4>Новая задача </h4>
+        </div>
+    </div>
 
     </div>
 </template>
-
 <script>
 export default {
     data() {
@@ -25,13 +30,10 @@ export default {
     }
 }
 </script>
-
 <style scoped>
- 
   .fixed {
     position: fixed;
     right:40px;
     bottom: 7%;
   }
 </style>
-
